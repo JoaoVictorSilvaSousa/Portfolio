@@ -5,71 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Victor</title>
+    <title>João Victor Silva - Desenvolvedor de Software</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="arquivos/Favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="contenier">
-        <header>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">João Victor Silva</a>
             <nav>
-                <h1>Portfolio</h1>
-                <a href="projetos.html" class="projetos">Projetos</a>
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="#contact" class="btn">Contato</a></li>
+                </ul>
             </nav>
-            <div class="ft">
-                <img src="./img/Foto Profissional.jpeg" alt="Foto de perfil de João Victor">
-                </div>
-            <h2>João Victor Silva</h2>
-            <h3>Desenvolvedor de Software iniciante</h3>
-        </header>
+        </div>
+    </header>
 
-        <main>
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="./img/Foto Profissional.jpeg" alt="Foto de perfil de João Victor" class="profile-pic">
+            <h1>João Victor Silva</h1>
+            <p class="subtitle">Desenvolvedor de Software | Em busca de estágio</p>
+            <a href="projetos.html" class="btn">Meus Projetos</a>
+        </div>
+    </section>
 
-            <h4 class="titulos">Sobre mim</h4>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
             <p>
-                Olá! Sou o João Victor, um jovem de 18 anos com paixão pela tecnologia. <br>Desde cedo, me
-                fascinei pela vastidão do mundo digital e pela magia de dar vida a ideias através da programação. <br>
-                Atualmente, curso Análise e desenvolvimento de Sistemas no Centro Universitário do Instituto de Educação Superior de Brasília (IESB), onde busco aprimorar meus conhecimentos na área de desenvolvimento. <br>Me encontro em uma etapa muito importante em que cada novo aprendizado me aproxima do meu objetivo de me tornar um desenvolvedor
-                completo e bem-sucedido.
+                Sou um desenvolvedor de software em início de carreira, apaixonado por transformar ideias em realidade através da programação. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, onde venho aprimorando minhas habilidades em desenvolvimento web e lógica de programação. Estou em busca de uma oportunidade de estágio para aplicar meus conhecimentos, colaborar em projetos desafiadores e crescer profissionalmente.
             </p>
+        </div>
+    </section>
 
-            <h4 class="titulos">Habilidades</h4>
-            <ul>
-                <li>Python</li>
-                <li>Lógica de Programação</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li> Git e Github</li>
-            </ul>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skill-cards">
+                <div class="card">
+                    <h3>Linguagens</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ferramentas</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Banco de Dados</h3>
+                    <ul>
+                        <li>SQL (Básico)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h4 class="titulos">Cursos</h4>
-            <ul>
-                <li>Lógica de Programação 14 horas Senai</li>
-                <li>HTML 6 horas Balta.io</li>
-                <li>CSS 6 horas Balta.io</li>
-                <li>Git e Github 20 horas Cursoemvideo</li>
-            </ul>
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Formação Acadêmica</h2>
+            <div class="education-item">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>Centro Universitário do Instituto de Educação Superior de Brasília (IESB)</p>
+                <p>Cursando</p>
+            </div>
+        </div>
+    </section>
 
-        </main>
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Cursos e Certificados</h2>
+            <div class="course-cards">
+                <div class="card">
+                    <h3>Lógica de Programação</h3>
+                    <p>Senai</p>
+                </div>
+                <div class="card">
+                    <h3>HTML e CSS</h3>
+                    <p>Balta.io</p>
+                </div>
+                <div class="card">
+                    <h3>Git e Github</h3>
+                    <p>Curso em Video</p>
+                </div>
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>Curso em Video</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <div class="midia">
-                <a href="https://github.com/JoaoVictorSilvaSousa" target="_blank">
-                    <img src="./img/gits.jpg" alt="Ícone do Github">
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Vamos conversar! Entre em contato comigo pelas redes sociais ou por e-mail.</p>
+            <div class="social-links">
+                <a href="https://github.com/JoaoVictorSilvaSousa" target="_blank" class="social-link">
+                    <img src="./img/github.png" alt="GitHub">
+                    GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/joão-victor-da-silva-bezerra-de-sousa/" target="_blank">
-                    <img src="./img/link.jpg" alt="Ícone do LinkedIn">
+                <a href="https://www.linkedin.com/in/joão-victor-da-silva-bezerra-de-sousa/" target="_blank" class="social-link">
+                    <img src="./img/linkedin.jpeg" alt="LinkedIn">
+                    LinkedIn
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jv42045@gmail.com" target="_blank">
-                    <img src="./img/sadas.jpg" alt="Ícone de E-mail">
+                <a href="mailto:jv42045@gmail.com" class="social-link">
+                    <img src="./img/email.jpg" alt="Email">
+                    Email
                 </a>
             </div>
-        </footer>
-    </div>
-    
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Victor Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

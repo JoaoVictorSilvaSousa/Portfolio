@@ -5,32 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Victor - Projetos</title>
+    <title>Projetos - João Victor Silva</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="arquivos/Favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 </head>
 
-<body>
+<body class="projects-page">
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">João Victor Silva</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#skills">Habilidades</a></li>
+                    <li><a href="index.html#education">Formação</a></li>
+                    <li><a href="index.html#courses">Cursos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="index.html#contact" class="btn">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="contenier">
-        
-        <main>
-
-            <h1>Projetos</h1>
-            <ul>
-                <li>
-                    <a href="https://relogio-joao.netlify.app/" target="_blank">Horário de Brasília</a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Meus Projetos</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>Horário de Brasília</h3>
                     <p>Um simples relógio que mostra o horário de Brasília em tempo real.</p>
-                </li>
-            </ul>
+                    <div class="technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://relogio-joao.netlify.app/" target="_blank" class="btn">Ver Projeto</a>
+                </div>
+                <!-- Add more project cards here -->
+            </div>
+        </div>
+    </section>
 
-            <a href="index.html">Voltar</a>
-            
-        </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Victor Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-    </div>
-    
 </body>
 
 </html>
