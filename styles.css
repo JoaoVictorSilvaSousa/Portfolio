@@ -175,7 +175,6 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.3s ease;
 }
 
