@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - João Victor Silva</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../arquivos/Favicon/favicon_io/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">João Victor Silva</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="/Paginas/projetos.html">Projetos</a></li>
+                    <li><a href="/Paginas/contato.html" class="btn">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os dados abaixo para entrarmos em contato.</p>
+        <br>
+        <a href="#area-form" class="btn">Ir para o Formulário</a> </section>
+
+    <section id="area-form" class="container section-padding">
+        <form action="#" method="post" class="meu-formulario">
+            <fieldset>
+                <legend>Informações Pessoais e de Projeto</legend>
+                
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone/WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="data">Data de Nascimento</label>
+                <input type="date" id="data" name="data">
+
+                <label for="assunto">Assunto do Contato *</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="freelance">Projeto Freelance</option>
+                    <option value="vaga">Vaga de Estágio/Emprego</option>
+                    <option value="duvida">Dúvida</option>
+                </select>
+                <br>
+                <br>
+                <p>Como prefere ser contatado? *</p>
+                <div class="radio-group">
+                    <input type="radio" id="contato-email" name="pref_contato" value="email" required>
+                    <label for="contato-email">Por E-mail</label>
+                    
+                    <input type="radio" id="contato-whats" name="pref_contato" value="whatsapp" required>
+                    <label for="contato-whats">Por WhatsApp</label>
+                </div>
+
+                <label for="mensagem">Digite sua mensagem *</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <p>Termos de Privacidade *</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Desejo receber novidades (Newsletter)</label>
+                    <br>
+                    <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                    <label for="termos">Aceito os termos de envio de dados *</label>
+                </div>
+
+                <div class="botoes-form">
+                    <button type="reset" class="btn btn-reset">Limpar Dados</button>
+                    <button type="submit" class="btn">Enviar Formulário</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 João Victor Silva.</p>
+        </div>
+    </footer>
+</body>
+</html>
