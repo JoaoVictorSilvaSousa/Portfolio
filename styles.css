@@ -350,3 +350,132 @@ footer {
 .projects-page .projects {
     flex-grow: 1;
 }
+/* --- NOVAS ESTILIZAÇÕES: Tabelas, Mídias e Formulários --- */
+
+.section-padding {
+    padding: 60px 20px;
+}
+
+/* Galeria de Imagens */
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.galeria-imagens img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.1);
+}
+
+/* Tabelas (Pelo menos 10 parâmetros de estilização só aqui) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabela-complexa .destaque {
+    background-color: #333;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Menu de Âncoras */
+.menu-ancoras {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Formulário e Fieldset */
+.meu-formulario fieldset {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--card-color);
+}
+
+.meu-formulario legend {
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.meu-formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.meu-formulario input[type="text"],
+.meu-formulario input[type="email"],
+.meu-formulario input[type="tel"],
+.meu-formulario input[type="date"],
+.meu-formulario select,
+.meu-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.radio-group, .checkbox-group {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.radio-group label, .checkbox-group label {
+    display: inline;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.botoes-form {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-reset {
+    background-color: #555 !important;
+}
+
+.btn-reset:hover {
+    background-color: #777 !important;
+}
